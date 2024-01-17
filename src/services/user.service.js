@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Define your API base URL
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "https://the-run-machine-backend.onrender.com/api/";
 const token = JSON.parse(localStorage.getItem("the_run_machine_user_token")) ? JSON.parse(localStorage.getItem("the_run_machine_user_token"))  : "no-token";
 const config = {
   headers: {
