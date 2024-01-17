@@ -1,38 +1,119 @@
-.App {
+.fontRaleway{
+  font-family: Raleway !important;
+}
+.fontMono{
+  font-family: monospace !important;
+}
+.fontCursive{
+  font-family: cursive;
+}
+.authForm{
+  width: 300px;
+}
+.brandLogo{
+  font-size: 23px;
+  font-family: Raleway;
+  letter-spacing: 0px;
+}
+.notificationIcon{
+  font-size: 25px;
+}
+.notificationCount{
+  position: relative;
+  right: 5px;
+  font-size: 12px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.storyHeader,.userStoryContainer {
+  white-space: nowrap;
+  overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.storyHeader::-webkit-scrollbar, .userStoryContainer::-webkit-scrollbar{
+  display: none;
+}
+.storyGola,.userStoryGola {
+  margin: 0px 10px;
+  display: inline-block;
+}
+.storyGola img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(red, orange, yellow, green);
+}
+.font12{
+  font-size: 12px !important;
+}
+.userStoryGola img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 1;
+  padding: 1px;
+  border: 1px solid gray;
+  /* background: linear-gradient(black, gray, white, rgb(49, 57, 49)); */
+}
+.userAvtar img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: rgb(183, 183, 185);
+}
+.navFooter{
+  position: fixed;
+  bottom: 0px;
+}
+.profileAvtar img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid gray;
+}
+.userStatics p, h6{
+font-size: 13.5px;
+}
+.font15{
+  font-size: 15px;
+}
+.storyLoader{
+  height: 3px;
+  border-radius: 5px;
+}
+.progressLine{
+  border-radius: 5px;
+  height: 3px;
+  background-image: linear-gradient(to right,  whitesmoke , gray,black );
+  width: 0px;
+  animation: load 10s ease-in;
+}
+@keyframes load {
+  100%{
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reactionBox{
+  position: relative;
+  bottom: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 3px gray;
+  font-size: 30px;
+  padding: 5px 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.reactionBox b:hover{
+  scale: 1.5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.viewIcon img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  
+}
+.viewContainer{
+  margin-top: -15px;
 }
