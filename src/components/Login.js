@@ -84,7 +84,7 @@ function Login({setShowScreen}) {
           </div>
           <div className="mb-4">
             <button className="btn btn-success w-100" onClick={handleLogin}>
-              Create Account
+              Log In
             </button>
           </div>
           <hr />
