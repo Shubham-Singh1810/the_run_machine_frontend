@@ -10,6 +10,7 @@ import AddPost from "../pages/AddPost";
 import NotificationPage from "../pages/NotificationPage";
 import AddComment from "../pages/AddComment";
 import Story from "../pages/Story";
+import PageNotFound from "../pages/PageNotFound";
 
 function AllRoutes() {
   return (
@@ -25,7 +26,7 @@ function AllRoutes() {
         <Route path="/profile/:id" element={<MyProfile/>}/>
         <Route path="/edit_profile" element={<EditProfile/>}/>
         <Route path="/story/:id" element={<Story/>}/>
-        <Route path="*" element={<Feed />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Navbar />
     </div>
