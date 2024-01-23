@@ -1,21 +1,21 @@
 import React from "react";
 import {useNavigate} from "react-router-dom"
-function Post() {
+function Post({value}) {
   const navigate = useNavigate()
   return (
     
     <div className="post">
       <div className="postNav px-2">
         <div className="userAvtar d-flex ">
-            <img src="https://cdn.wallpapersafari.com/56/41/ugjeCc.jpg"/>
+            <img src={value?.userId?.profilePic}/>
             <div className="mt-1 ms-2">
-                <p className="mb-0 fontCursive">Shubham Singh</p>
+                <p className="mb-0 fontCursive">{value?.userId?.name}</p>
                 <p className="text-primary" style={{marginTop:"-5px", fontSize:"12px"}}>Follow</p>
             </div>
         </div>
       </div> 
       <div className="postImg">
-        <img className="img-fluid" src="https://cdn.wallpapersafari.com/56/41/ugjeCc.jpg"/>
+        <img className="img-fluid w-100"   src={value?.postImg}/>
       </div>
       <div className="postFooter">
         <div className="postAction d-flex justify-content-between">
@@ -28,7 +28,7 @@ function Post() {
         </div>
         <p className="mx-2 font12 mb-0"><b>1,000 Likes</b></p>
         <div className="postCaption mx-2">
-            <p className="mb-0"><b className="fontRaleway font15">Shubham </b><span className="fontRaleway font15">My First Post</span></p>
+            <p className="mb-0"><b className="fontRaleway font15">Shubham </b><span className="fontRaleway font15">{value?.caption}</span></p>
             <p className="fontCursive"><u>View all Comments</u></p>
         </div>
       </div>
