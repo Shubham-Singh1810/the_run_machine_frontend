@@ -25,6 +25,7 @@ function AllRoutes() {
         <Route path="/profile/:id" element={<MyProfile/>}/>
         <Route path="/edit_profile" element={<EditProfile/>}/>
         <Route path="/story/:id" element={<Story/>}/>
+        <Route path="*" element={<Feed />} />
       </Routes>
       <Navbar />
     </div>
